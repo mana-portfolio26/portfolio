@@ -1,0 +1,631 @@
+/*================================================
+DELICIOUS MEAL CLUB PROJECT
+WordPress Fixed Page
+================================================*/
+
+.gaia-page{
+    width:100%;
+    background:#000;
+    color:#fff;
+    overflow:hidden;
+    font-family:"Noto Sans JP",sans-serif;
+}
+
+.gaia-page *,
+.gaia-page *:before,
+.gaia-page *:after{
+    box-sizing:border-box;
+}
+
+/*=========================================
+SECTION
+=========================================*/
+
+.gaia-page section{
+    width:min(1200px,90%);
+    margin:180px auto;
+    padding:60px 0;
+}
+
+/*=========================================
+TEXT
+=========================================*/
+
+.gaia-page h1,
+.gaia-page h2,
+.gaia-page h3,
+.gaia-page h4{
+
+    color:#fff !important;
+    font-weight:700;
+    margin:0;
+    line-height:1.35;
+
+}
+
+.gaia-page p,
+.gaia-page li{
+
+    color:#f2f2f2 !important;
+    font-size:18px;
+    line-height:2;
+    margin-bottom:28px;
+
+}
+
+.gaia-page strong{
+
+    color:#8EF9FF !important;
+
+}
+
+.section-title{
+
+    display:inline-block;
+    color:#8EF9FF !important;
+    letter-spacing:6px;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:30px;
+    text-transform:uppercase;
+
+}
+
+/*=========================================
+HERO
+=========================================*/
+
+.gaia-hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hero-inner{
+
+    width:min(900px,90%);
+
+}
+
+.hero-sub{
+
+    color:#8EF9FF !important;
+
+    letter-spacing:8px;
+
+    margin-bottom:25px;
+
+}
+
+.gaia-hero h1{
+
+    font-size:110px;
+
+    line-height:.9;
+
+    margin-bottom:70px;
+
+}
+
+.hero-poster{
+
+    width:420px;
+
+    max-width:100%;
+
+    display:block;
+
+    margin:auto;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 30px 80px rgba(0,0,0,.55);
+
+}
+
+/*=========================================
+IMAGE
+=========================================*/
+
+.gaia-page img{
+
+    width:100%;
+
+    display:block;
+
+    height:auto;
+
+}
+
+/*=========================================
+PROJECT OVERVIEW
+=========================================*/
+
+.overview-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:120px;
+
+    align-items:flex-start;
+
+}
+
+.overview-grid h2{
+
+    font-size:56px;
+
+    margin-bottom:25px;
+
+}
+
+.overview-grid ul{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.overview-grid li{
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+    padding-bottom:22px;
+
+    margin-bottom:30px;
+
+}
+
+/*=========================================
+PLANNING
+=========================================*/
+
+.planning{
+
+    display:grid;
+
+    grid-template-columns:1fr 500px;
+
+    gap:90px;
+
+    align-items:start;
+
+}
+
+.planning h2{
+
+    font-size:52px;
+
+    margin-bottom:40px;
+
+    text-wrap:balance;
+
+}
+
+.planning-image{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.planning-image img{
+    width:100%;
+    display:block;
+    border-radius:20px;
+    object-fit:cover;
+}
+/*=========================================
+SETUP
+=========================================*/
+
+.setup-grid{
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:80px;
+
+    align-items:start;
+
+}
+
+.setup-grid img{
+
+    border-radius:20px;
+
+    margin-bottom:25px;
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.45);
+
+}
+
+.setup h2{
+
+    font-size:52px;
+
+    margin-bottom:60px;
+
+}
+/*=========================================
+CONCEPT
+=========================================*/
+
+.concept{
+
+    text-align:center;
+
+}
+
+.concept h2{
+
+    max-width:900px;
+    margin:20px auto 50px;
+    font-size:52px;
+    line-height:1.4;
+    text-wrap:balance;
+
+}
+
+.concept p{
+
+    max-width:900px;
+    margin:0 auto 30px;
+
+}
+
+/*=========================================
+VIDEOS
+=========================================*/
+
+.video-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+    margin-top:60px;
+
+}
+
+.video-grid video{
+
+    width:100%;
+    display:block;
+    border-radius:20px;
+    background:#111;
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.45);
+
+    transition:.4s;
+
+}
+
+.video-grid video:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/*=========================================
+EVENT PHOTO
+=========================================*/
+
+.gallery{
+
+    text-align:center;
+
+}
+
+.gallery .planning-image{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    margin-top:50px;
+
+}
+
+.gallery .planning-image img{
+
+    border-radius:20px;
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.45);
+
+}
+
+/*=========================================
+ROLE
+=========================================*/
+
+.role-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    margin-top:50px;
+
+}
+
+.role-grid div{
+
+    background:#111;
+    color:#fff;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.08);
+    padding:28px;
+    text-align:center;
+    font-size:18px;
+    transition:.35s;
+
+}
+
+.role-grid div:hover{
+
+    transform:translateY(-8px);
+    border-color:#8EF9FF;
+    color:#8EF9FF;
+
+}
+
+/*=========================================
+REFLECTION
+=========================================*/
+
+.reflection{
+
+    text-align:center;
+    padding-bottom:180px;
+
+}
+
+.reflection h2{
+
+    max-width:900px;
+    margin:20px auto 50px;
+    font-size:54px;
+    line-height:1.4;
+    text-wrap:balance;
+
+}
+
+.reflection p{
+
+    max-width:900px;
+    margin:0 auto 30px;
+
+}
+
+/*=========================================
+FADE
+=========================================*/
+
+.fade{
+
+    opacity:1 !important;
+    visibility:visible !important;
+    transform:none !important;
+
+}
+
+.fade.show{
+
+    opacity:1 !important;
+    transform:none !important;
+
+}
+
+/*=========================================
+BACKGROUND
+=========================================*/
+
+.gaia-page::before{
+
+    content:"";
+    position:fixed;
+    top:-200px;
+    right:-200px;
+
+    width:700px;
+    height:700px;
+
+    background:
+    radial-gradient(
+    rgba(142,249,255,.08),
+    transparent 70%
+    );
+
+    pointer-events:none;
+    z-index:-1;
+
+}
+
+/*=========================================
+RESPONSIVE
+=========================================*/
+
+@media (max-width:900px){
+
+.gaia-page section{
+
+    width:92%;
+    margin:120px auto;
+
+}
+
+.gaia-hero h1{
+
+    font-size:64px;
+
+}
+
+.hero-poster{
+
+    width:90%;
+
+}
+
+.overview-grid,
+.planning,
+.setup-grid,
+.video-grid,
+.role-grid{
+
+    grid-template-columns:1fr;
+    gap:50px;
+
+}
+
+.gallery .planning-image{
+
+    grid-template-columns:1fr;
+
+}
+
+.concept h2,
+.reflection h2,
+.planning h2,
+.setup h2{
+
+    font-size:36px;
+
+}
+
+.gaia-page p,
+.gaia-page li{
+
+    font-size:16px;
+
+}
+
+}
+
+/*=========================================
+HOVER
+=========================================*/
+
+.hero-poster,
+.planning-image img,
+.setup-grid img,
+.gallery img{
+
+    transition:.45s;
+
+}
+
+.hero-poster:hover,
+.planning-image img:hover,
+.setup-grid img:hover,
+.gallery img:hover{
+
+    transform:scale(1.02);
+
+}
+.planning-image img,
+.setup-grid img,
+.gallery img{
+
+    cursor:pointer;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.45),
+    0 0 25px rgba(142,249,255,.08);
+
+}
+/*=========================================
+WordPress 見出し改行対策
+=========================================*/
+
+.concept h2,
+.reflection h2,
+.planning h2,
+.overview-grid h2{
+
+    width:100%;
+    max-width:900px;
+    margin:20px auto 50px;
+
+    font-size:54px;
+    line-height:1.35;
+
+    text-align:center;
+
+    white-space:normal;
+
+    word-break:keep-all;
+    overflow-wrap:normal;
+    line-break:strict;
+
+    text-wrap:pretty;
+}
+
+@media (max-width:900px){
+
+.concept h2,
+.reflection h2,
+.planning h2,
+.overview-grid h2{
+
+    font-size:36px;
+    line-height:1.4;
+
+}
+
+}
+/*=========================================
+WordPress 強制文字色
+=========================================*/
+
+.gaia-page,
+.gaia-page *{
+    color:inherit;
+}
+
+.gaia-page h1,
+.gaia-page h2,
+.gaia-page h3,
+.gaia-page h4,
+.gaia-page h5,
+.gaia-page h6{
+
+    color:#ffffff !important;
+    -webkit-text-fill-color:#ffffff !important;
+    opacity:1 !important;
+    filter:none !important;
+    mix-blend-mode:normal !important;
+
+}
+
+.gaia-page p,
+.gaia-page li,
+.gaia-page span{
+
+    color:#f2f2f2 !important;
+}
+
+.gaia-page .hero-sub,
+.gaia-page .section-title{
+
+    color:#8EF9FF !important;
+}
+
+.gaia-page strong{
+
+    color:#8EF9FF !important;
+}

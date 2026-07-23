@@ -1,0 +1,644 @@
+/* ===========================
+Portfolio Style
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:linear-gradient(
+        180deg,
+        #050505 0%,
+        #0b0b0b 50%,
+        #000 100%
+    );
+    color:#fff;
+    font-family:"Helvetica Neue","Noto Sans JP",sans-serif;
+    line-height:2;
+}
+
+section{
+    width:min(1200px,90%);
+    margin:180px auto;
+}
+
+img{
+    width:100%;
+    display:block;
+    border-radius:20px;
+}
+
+/* ===========================
+Typography
+=========================== */
+
+h1{
+    font-size:72px;
+    font-weight:700;
+    letter-spacing:.08em;
+    color:#fff;
+}
+
+h2{
+    font-size:44px;
+    font-weight:700;
+    color:#fff;
+    margin-bottom:35px;
+    padding-bottom:18px;
+    position:relative;
+}
+
+h2::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:80px;
+    height:3px;
+    background:#8EF9FF;
+}
+
+h3{
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:18px;
+    color:#fff;
+}
+
+p{
+    color:#f0f0f0;
+    font-size:18px;
+    line-height:2;
+    margin-bottom:24px;
+}
+
+.section-number{
+    color:#999;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:6px;
+    margin-bottom:12px;
+}
+
+.section-title{
+    color:#8EF9FF;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:8px;
+    text-transform:uppercase;
+    margin-bottom:25px;
+}
+
+/* ===========================
+PROFILE
+=========================== */
+
+.profile{
+    display:grid;
+    grid-template-columns:420px 1fr;
+    gap:90px;
+    align-items:center;
+}
+
+.profile-image{
+    overflow:hidden;
+    border-radius:22px;
+    box-shadow:0 0 40px rgba(142,249,255,.15);
+}
+
+.profile-image img{
+    transition:.8s;
+}
+
+.profile-image:hover img{
+    transform:scale(1.05);
+}
+
+.profile-name{
+    font-size:60px;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#fff;
+    margin-bottom:15px;
+}
+
+.profile-job{
+    font-size:22px;
+    color:#8EF9FF;
+    font-weight:600;
+    letter-spacing:2px;
+    margin-bottom:40px;
+}
+
+/* ===========================
+Cards
+=========================== */
+
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+.card{
+    background:#151515;
+    border:1px solid rgba(255,255,255,.12);
+    padding:40px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#8EF9FF;
+    box-shadow:0 0 35px rgba(142,249,255,.18);
+}
+
+/* ===========================
+SKILLS
+=========================== */
+
+.skill{
+    margin-bottom:35px;
+}
+
+.skill-name{
+    font-size:16px;
+    font-weight:600;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.bar{
+    height:8px;
+    background:#262626;
+    border-radius:100px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    background:linear-gradient(
+        90deg,
+        #5fefff,
+        #8EF9FF
+    );
+}
+
+/* ===========================
+PROFILE DATA
+=========================== */
+
+.data{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.data div{
+    background:#151515;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:35px;
+}
+
+/* ===========================
+CONTACT
+=========================== */
+
+.contact{
+    text-align:center;
+    padding:160px 0;
+}
+
+.contact h2{
+    font-size:58px;
+}
+
+.contact p{
+    font-size:20px;
+    color:#d8d8d8;
+}
+
+/* ===========================
+Responsive
+=========================== */
+
+@media(max-width:900px){
+
+.profile{
+    grid-template-columns:1fr;
+}
+
+.grid-3{
+    grid-template-columns:1fr;
+}
+
+.data{
+    grid-template-columns:1fr;
+}
+
+section{
+    margin:120px auto;
+}
+
+.profile-name{
+    font-size:42px;
+}
+
+.profile-job{
+    font-size:18px;
+}
+
+h1{
+    font-size:50px;
+}
+
+h2{
+    font-size:34px;
+}
+
+}
+/* ===== 文字色を強制 ===== */
+
+.profile-name{
+    color:#ffffff !important;
+}
+
+.profile-job{
+    color:#8EF9FF !important;
+}
+
+.section-title{
+    color:#8EF9FF !important;
+}
+
+h1,h2,h3{
+    color:#ffffff !important;
+}
+
+strong{
+    color:#8EF9FF !important;
+}
+/* ===== h4を追加 ===== */
+
+h4{
+    color:#8EF9FF !important;
+    font-size:30px;
+    font-weight:700;
+    line-height:1.8;
+    margin:35px 0;
+}
+
+/* リストも白に */
+
+li{
+    color:#f0f0f0;
+}
+
+/* リンクも白 */
+
+a{
+    color:#ffffff;
+}
+
+a:hover{
+    color:#8EF9FF;
+}
+/* =========================================
+HERO
+========================================= */
+
+#hero{
+
+position:relative;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+
+}
+
+.hero-bg{
+
+position:absolute;
+width:100%;
+height:100%;
+
+background:url("背景画像URL") center center/cover;
+
+transform:scale(1.08);
+
+animation:heroZoom 18s linear infinite alternate;
+
+}
+
+.hero-bg video{
+
+width:100%;
+height:100%;
+object-fit:cover;
+
+}
+
+.hero-overlay{
+
+position:absolute;
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.55);
+
+backdrop-filter:blur(2px);
+
+}
+
+.hero-content{
+
+position:relative;
+z-index:10;
+
+text-align:center;
+
+animation:fadeHero 2s ease;
+
+}
+
+.hero-sub{
+
+letter-spacing:10px;
+font-size:14px;
+color:#8EF9FF;
+
+margin-bottom:25px;
+
+}
+
+.hero-title{
+
+font-size:100px;
+line-height:.95;
+letter-spacing:8px;
+
+font-weight:700;
+
+margin-bottom:35px;
+
+}
+
+.hero-text{
+
+font-size:24px;
+
+letter-spacing:3px;
+
+color:#ddd;
+
+}
+
+.scroll-down{
+
+position:absolute;
+
+left:50%;
+
+bottom:50px;
+
+transform:translateX(-50%);
+
+}
+
+.scroll-down span{
+
+display:block;
+
+width:2px;
+
+height:80px;
+
+background:#8EF9FF;
+
+margin:auto;
+
+animation:scrollMove 2s infinite;
+
+}
+
+.scroll-down p{
+
+margin-top:10px;
+
+font-size:12px;
+
+letter-spacing:6px;
+
+color:#8EF9FF;
+
+}
+
+/* Animation */
+
+@keyframes fadeHero{
+
+0%{
+
+opacity:0;
+transform:translateY(30px);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes heroZoom{
+
+0%{
+
+transform:scale(1.08);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+@keyframes scrollMove{
+
+0%{
+
+transform:translateY(0);
+
+opacity:.2;
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(20px);
+
+opacity:.2;
+
+}
+
+}
+/*==============================
+HEADER
+==============================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    padding:25px 60px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.45);
+
+    backdrop-filter:blur(10px);
+
+    z-index:9999;
+
+}
+
+.logo{
+
+    color:#fff;
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+    font-weight:700;
+
+}
+
+.nav{
+
+    display:flex;
+
+    gap:45px;
+
+}
+
+.nav a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+.nav a:hover{
+
+    color:#72F2FF;
+
+}
+.works-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+    margin-top:60px;
+
+}
+
+.works-grid a{
+
+    text-decoration:none;
+
+    color:white;
+
+}
+
+.works-grid img{
+
+    width:100%;
+
+    border-radius:18px;
+
+    transition:.4s;
+
+}
+
+.works-grid img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.works-grid h3{
+
+    margin-top:20px;
+
+    text-align:center;
+
+}
+@media(max-width:900px){
+
+    .header{
+    
+        padding:20px;
+    
+        flex-direction:column;
+    
+        gap:20px;
+    
+    }
+    
+    .nav{
+    
+        gap:20px;
+    
+        flex-wrap:wrap;
+    
+        justify-content:center;
+    
+    }
+    
+    .works-grid{
+    
+        grid-template-columns:1fr;
+    
+    }
+    
+    }
