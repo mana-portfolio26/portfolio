@@ -324,7 +324,25 @@ RESPONSIVE
     grid-template-columns:1fr;
     gap:50px;
 }
+.planning{
+    display:block;
+}
 
+.planning-text{
+    width:100%;
+    margin-bottom:40px;
+}
+
+.planning-image{
+    width:100%;
+}
+
+.planning-image img{
+    width:100%;
+    max-width:100%;
+    height:auto;
+    display:block;
+}
 .concept h2,
 .reflection h2,
 .planning h2{
