@@ -491,7 +491,46 @@ RESPONSIVE
     gap:50px;
 
 }
+.planning{
+    display:block;
+}
 
+.planning-text{
+    width:100%;
+}
+
+.planning-image{
+    display:block;
+    width:100%;
+    margin-top:40px;
+}
+
+.planning-image img{
+    width:100%;
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+.planning{
+    display:block;
+}
+
+.planning-text{
+    width:100%;
+}
+
+.planning-image{
+    display:block;
+    width:100%;
+    margin-top:40px;
+}
+
+.planning-image img{
+    width:100%;
+    max-width:100%;
+    height:auto;
+    display:block;
+}
 .gallery .planning-image{
 
     grid-template-columns:1fr;
@@ -569,7 +608,7 @@ WordPress 見出し改行対策
     white-space:normal;
 
     word-break:keep-all;
-    overflow-wrap:normal;
+    overflow-wrap:anywhere;
     line-break:strict;
 
     text-wrap:pretty;
@@ -582,9 +621,11 @@ WordPress 見出し改行対策
 .planning h2,
 .overview-grid h2{
 
+    width:100%;
+    max-width:100%;
     font-size:36px;
     line-height:1.4;
 
 }
-
 }
+
