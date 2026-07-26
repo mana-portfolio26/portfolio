@@ -20,11 +20,11 @@ WordPress Fixed Page
 /*=========================================
 SECTION
 =========================================*/
-
 .gaia-page section{
-    width:min(1200px,90%);
+    width:100%;
+    max-width:1200px;
     margin:180px auto;
-    padding:60px 0;
+    padding:60px 20px;
 }
 
 /*=========================================
@@ -496,7 +496,6 @@ RESPONSIVE
 }
 
 .overview-grid,
-.planning,
 .setup-grid,
 .video-grid,
 .role-grid{
@@ -506,24 +505,41 @@ RESPONSIVE
 
 }
 
+/* ---------- Planning ---------- */
+
 .planning{
-    display:block;
+
+    display:grid;
+    grid-template-columns:1fr;
+    gap:40px;
+    align-items:start;
+
 }
-.planning-text,
-.planning-image{
+
+.planning-text{
+
     width:100%;
+
 }
 
 .planning-image{
-    margin-top:40px;
+
+    width:100%;
+    margin-top:30px;
+
 }
 
 .planning-image img{
+
     width:100%;
     max-width:100%;
     height:auto;
     display:block;
+    margin:auto;
+
 }
+
+/* ---------- Gallery ---------- */
 
 .gallery .planning-image{
 
@@ -531,19 +547,47 @@ RESPONSIVE
 
 }
 
+/* ---------- Heading ---------- */
+
 .concept h2,
 .reflection h2,
 .planning h2,
-.setup h2{
+.setup h2,
+.overview-grid h2{
 
+    width:100%;
+    max-width:100%;
     font-size:36px;
+    line-height:1.35;
+    text-align:center;
+    word-break:keep-all;
+    overflow-wrap:anywhere;
 
 }
+
+/* ---------- Text ---------- */
 
 .gaia-page p,
 .gaia-page li{
 
     font-size:16px;
+
+}
+
+/* ---------- YouTube ---------- */
+
+.video-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.video-grid iframe{
+
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    border-radius:20px;
 
 }
 
@@ -581,46 +625,7 @@ HOVER
     0 0 25px rgba(142,249,255,.08);
 
 }
-/*=========================================
-WordPress 見出し改行対策
-=========================================*/
 
-.concept h2,
-.reflection h2,
-.planning h2,
-.overview-grid h2{
-
-    width:100%;
-    max-width:900px;
-    margin:20px auto 50px;
-
-    font-size:54px;
-    line-height:1.35;
-
-    text-align:center;
-
-    white-space:normal;
-
-    word-break:keep-all;
-    overflow-wrap:normal;
-    line-break:strict;
-
-    text-wrap:pretty;
-}
-
-@media (max-width:900px){
-
-.concept h2,
-.reflection h2,
-.planning h2,
-.overview-grid h2{
-
-    font-size:36px;
-    line-height:1.4;
-
-}
-
-}
 /*=========================================
 WordPress 強制文字色
 =========================================*/
@@ -661,4 +666,48 @@ WordPress 強制文字色
 .gaia-page strong{
 
     color:#8EF9FF !important;
+}
+/*=========================================
+SMARTPHONE FIX
+=========================================*/
+
+@media (max-width:900px){
+
+.gaia-page{
+    overflow-x:hidden;
+}
+
+.gaia-page section{
+    width:100%;
+    max-width:100%;
+    padding:50px 20px;
+    margin:100px auto;
+}
+
+.gaia-page h1{
+    font-size:52px;
+    line-height:1.1;
+    word-break:break-word;
+}
+
+.gaia-page h2{
+    width:100%;
+    max-width:100%;
+    font-size:34px !important;
+    line-height:1.4;
+    margin:0 0 30px;
+    padding:0;
+    white-space:normal;
+    overflow-wrap:break-word;
+    word-break:normal;
+}
+
+.gaia-page p,
+.gaia-page li{
+    width:100%;
+    max-width:100%;
+    font-size:16px;
+    line-height:1.9;
+}
+
 }
