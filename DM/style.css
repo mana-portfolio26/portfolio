@@ -546,7 +546,6 @@ RESPONSIVE
     grid-template-columns:1fr;
 
 }
-
 /* ---------- Heading ---------- */
 
 .concept h2,
@@ -560,8 +559,11 @@ RESPONSIVE
     font-size:36px;
     line-height:1.35;
     text-align:center;
+
+    white-space:normal;
     word-break:keep-all;
-    overflow-wrap:anywhere;
+    overflow-wrap:normal;
+    line-break:strict;
 
 }
 
