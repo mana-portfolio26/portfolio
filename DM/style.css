@@ -692,16 +692,24 @@ SMARTPHONE FIX
     word-break:break-word;
 }
 
-{
+.gaia-page h2,
+.concept h2,
+.reflection h2,
+.planning h2,
+.setup h2,
+.overview-grid h2,
+.gallery h2,
+.videos h2{
     width:100%;
     max-width:100%;
     font-size:34px !important;
     line-height:1.4;
-    margin:0 0 30px;
+    margin:0 auto 30px;
     padding:0;
+    text-align:center !important;
     white-space:normal;
-    overflow-wrap:break-word;
-    word-break:normal;
+    word-break:keep-all;
+    overflow-wrap:anywhere;
 }
 
 .gaia-page p,
