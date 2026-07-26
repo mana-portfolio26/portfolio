@@ -295,24 +295,26 @@ CONCEPT
 }
 
 /*=========================================
-VIDEOS
+YOUTUBE
 =========================================*/
 
 .video-grid{
 
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:40px;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
     margin-top:60px;
 
 }
 
-.video-grid video{
+.video-grid iframe{
 
     width:100%;
-    display:block;
+    aspect-ratio:16 / 9;
+    border:none;
     border-radius:20px;
-    background:#111;
+    display:block;
+
     box-shadow:
     0 20px 60px rgba(0,0,0,.45);
 
@@ -320,12 +322,21 @@ VIDEOS
 
 }
 
-.video-grid video:hover{
+.video-grid iframe:hover{
 
     transform:translateY(-8px);
 
 }
 
+@media (max-width:900px){
+
+.video-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
 /*=========================================
 EVENT PHOTO
 =========================================*/
