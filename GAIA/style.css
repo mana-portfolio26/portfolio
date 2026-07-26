@@ -327,6 +327,20 @@ RESPONSIVE
 .planning{
     display:block;
 }
+.planning-text,
+.planning-image{
+    width:100%;
+}
+
+.planning-image{
+    margin-top:40px;
+}
+
+.planning-image img{
+    width:100%;
+    max-width:100%;
+    display:block;
+}
 
 .planning-text{
     width:100%;
