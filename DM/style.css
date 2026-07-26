@@ -199,7 +199,7 @@ PLANNING
 
     display:grid;
 
-    grid-template-columns:1fr 500px;
+    grid-template-columns:minmax(0,1fr) minmax(300px,500px);
 
     gap:90px;
 
@@ -490,6 +490,25 @@ RESPONSIVE
     grid-template-columns:1fr;
     gap:50px;
 
+}
+
+.planning{
+    display:block;
+}
+.planning-text,
+.planning-image{
+    width:100%;
+}
+
+.planning-image{
+    margin-top:40px;
+}
+
+.planning-image img{
+    width:100%;
+    max-width:100%;
+    height:auto;
+    display:block;
 }
 
 .gallery .planning-image{
